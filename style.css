@@ -1,0 +1,1092 @@
+/* Damos formato al cuerpo del documento */
+body 
+{
+    /* Definimos el color de fondo, el tipo de fuente y su color.*/ 
+    background-color: rgb(232, 232, 232);
+    font-family: 'Noto Serif', serif;
+    color: rgb(28, 28, 28);
+     /* Eliminamos márgenes del cuerpo principal.*/
+     margin: 0 auto;
+     padding: 0;
+     
+}
+/* Damos formato al link de la página actual.*/
+.pagina_actual
+{
+    color: rgba(28, 28, 28);
+    font-size: bolder;
+    font-style: italic;
+}
+
+/* Si la pantalla tiene una resolución mayor de 768px...*/
+@media only screen and (min-width: 768px) 
+{ 
+    /* Definiremos el header como...*/
+    header 
+    {
+        /*...un grid de 4 columnas con un ancho equitativo.*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* El header abarcará todo el ancho de página.*/ 
+        width: 100%; 
+        /* Añadimos un mínimo de márgenes.*/
+        margin-top: 1%;
+        margin-bottom: 5%;
+        /* Establecemos tamaño de fuente y anchura del header.*/
+        font-size: 0.8em;  
+        height: 50px;
+    }
+
+    /* Ordenamos el primer elemento del menú. Logo + texto.*/
+    .div_menu_1
+    {
+        /* Situamos el texto a media altura del logo.*/ 
+        display: flex;
+        margin-left: 3%;
+    }
+    /* Formateamos los links sin subrayado y con opacidad máxima.*/
+    header a
+    {
+        text-decoration: none;
+        color:rgba(28,28,28);
+        opacity: 1;
+    }
+    /* Formateamos los links cuando se pasa el ratón por encima.*/
+    header a:hover
+    {
+        /* El color se mantiene pero disminuimos la opacidad.*/
+        color: rgba(28, 28, 28);
+        opacity: 0.5;
+    }
+    /* Damos formato al texto del primer elemento del menú.*/
+    .div_logo_text
+    {
+        /* display: inline;*/
+        /* Damos tamaño a al texto y establecemos los márgenes.*/
+        font-size: 2em;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    
+    /* Formateamos el segundo elemento del menú.*/
+    .div_menu_2 
+    {
+        /* Establecemos la fuente*/
+        font-family:'Open Sans', sans-serif;
+        /* Centramos verticalmente.*/
+        align-self: center;
+        /* Justificamos a la derecha.*/
+        justify-self: right;
+        /* Creamos márgen con el siguiente elemento del menú.*/
+        margin-right: 3%;   
+    }
+
+    /* Damos formato al tercer elemento del menú.*/
+    .div_menu_3 
+    {
+        font-family:'Open Sans', sans-serif;
+        /* Centramos verticalmente.*/
+        align-self: center;
+        /* Añadimos margen con el elemento de la izquierda.*/
+        margin-left: 2%;
+    }
+    /* Damos formato al 4 elemento del menú.*/
+    .div_menu_4 
+    {
+        /* Centramos verticalmente.*/
+        align-self: center;
+        /* Justificamos a la derecha.*/
+        justify-self: right;
+        /* Añadimos margen derecho.*/ 
+        margin-right: 5%;
+    }
+
+    /* Damos forma al boton de registro: anchura, altura, color de fondo, */
+    /* color de fuente, borde y radio de las esquinas.*/
+    .div_menu_4 input
+    {
+        width: 100px;
+        height: 30px;
+        background-color:rgb(155, 23, 0);
+        color:rgb(255, 255, 255);
+        border-style: none;
+        border-radius: 4px;
+    }
+
+    /* Cambiamos el color de la fuente cuando pasamos el ratón por encima.*/
+    .div_menu_4 input:hover
+    {
+        color:rgb(28, 28, 28);
+    }
+
+    /* Formateamos la segunda parte del texto del elemento principal */
+    /* del menú.*/
+    .club 
+    {
+        font-style: italic;
+        color:rgb(155, 23, 0);
+    }  
+   
+    /* Damos formato a la primera sección del fichero índice.*/
+    .Seccion1
+    {
+        width: 58%;
+        margin: 0 auto;
+        font-size: 0.85em;
+        text-align:center;
+        line-height: 25px;
+        margin-bottom: 5%;
+    }
+    /* Centramos el contenido de las etiquetas h2.*/
+    h2
+    {
+        text-align: center;
+    }
+    /* El formato de la segunda sección es...*/
+    .Seccion2
+    {
+        /*...un grid de 4 columnas con ancho equitativo.*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        /* Centramos y damos tamaño al bloque. */
+        width: 70%;
+        margin: 0 auto;
+        /* Añadimos margen con la siguuente sección.*/
+        margin-bottom: 5%;
+    }
+
+    /* Definimos el tamaño de las imágenes de la seccíon2.*/
+    .Seccion2_imagenes 
+    {
+        width: 70%;
+        height: 70%;   
+    }
+    /* Ordenamos el contenedor de la imagen y su descripción.*/
+    .Seccion2_img
+    {
+        /* Cenntramos verticalmente.*/
+        align-self: center;
+        /* Centramos el contenido de la columna.*/
+        text-align: center;
+    }
+    /* Damos formato a la descripción de las imágenes*/
+    .Seccion2_img > p
+    {
+        margin-top: 0%;
+        font-size:0.7em;
+    }
+    /* La sección 3 está compuesta por...*/
+    .Seccion3 
+    {
+        /*... un grid de dos columnas.*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Definimos la anchura del contenedor y lo centramos.*/
+        width: 75%;
+        margin: 0 auto; 
+    }
+    .Seccion3_elemento1
+    {
+        /*vertical-align: top;
+        padding-top: 0%;*/
+    }
+    /* Formateamos el texto del elemnto1 de la sección1.*/
+    .Seccion3_elemento1 > p
+    {
+        /* Determinamos márgenes, tamaño y espaciado.*/
+        margin-top: 0%;
+        font-size: 1.3em;
+        padding: 0;
+    }
+    /* Definimos el elemento de la derecha de la sección3.*/
+    .Seccion3_elemento2
+    {
+        /* Añadimos margen izquierdo y alineamos el */
+        /* texto a la izqierda.*/
+        margin-left: 15%;
+        text-align: left;
+    }
+    /* Damos formato a las entradas de texto.*/
+    .Seccion3_elemento2_input
+    {
+        /* damos márgen con el resto de elementos.*/
+        margin-bottom: 2%;
+        /* definimos anchura y altura.*/
+        width: 100%;
+        height: 30px;
+        /* definimos el color.*/
+        color:rgb(28, 28, 28);
+    }
+    /* Damos formato al texto del formulario: */
+    /* alineación texto, tipo de letra, tamaño y márgenes y padding.*/
+    form > p
+    {
+        text-align: left;
+        font-size: 0.5em;
+        font-family:'Open Sans', sans-serif;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+    /* Damos tamaño al texto de la etiqueta del check box. */
+    form > label
+    {
+        font-size: 0.5em;
+    }
+    /* Damos formato al botón de registro: márgenes, tamaño, color de fuente, */
+    /* color de fondo, tipo de letra, tamaño letra, tipo de borde y radio de os contornos. */
+    .registro
+    {
+        margin-top: 5%;
+        margin-right:0%;
+        width:150px;
+        height: 40px;
+        background-color:rgb(155, 23, 0);
+        color: aliceblue;
+        border-style: none;
+        border-radius: 4px;
+        /* Definimos el button como bloque para que el label */
+        /* se situe por encima del mismo.*/
+        display:block;
+        font-size: 1em;
+        font-family:'Open Sans', sans-serif;
+       
+    }
+    /* Definimos el color del texto cuando acercamos del ratón.*/
+    .registro:hover
+    {
+        color:rgb(28, 28, 28);
+    }
+    /* Definimos el footer...*/
+    footer
+    {
+        /*... será un grid de dos columnas.*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        font-size: 0.5em;
+        width: 100%;
+        background-color: rgb(67, 58, 68);
+        height: 170px;
+        margin-top: 6%;
+        left: 0;
+        right: 0;
+        color:rgb(255, 255, 255);
+        font-family:'Open Sans', sans-serif;
+        padding-top: 2%;
+        /*position: relative;*/
+        padding-bottom: 0.8%;
+    }
+
+    /* Formateamos el elemento superior de la izquierda.*/
+    .footer_elemento1
+    {
+        /* Colocamos el elemento en la fila 1 y columna 1.*/
+        grid-row:1;
+        grid-column: 1;
+        /* Alineamos verticalmente dentro de la columna.*/
+        align-self: center;
+    
+        padding-left: 3%;
+        height: 50px;
+    }
+    /* El tercer elemento ye el segundo son listas horizontal.*/
+    footer ul
+    {
+        /* creamos la horizontalidad.*/
+        display: flex;
+        padding: 0;
+        margin: 0;
+        /*Definimos el estilo de el decorado de lista.*/
+        list-style: circle;
+    }
+    /* Damos margen entre los elementos del menú.*/
+    footer ul li
+    {   
+        margin-right: 3%;
+    }
+    /* Eliminamos la decoración del primer elemento de cada menú.*/ 
+    footer ul li:first-child
+    {
+        list-style: none;
+    }
+    .footer_elemento2
+    {
+        /* Colocamos el segundo elemento el la segunda fila, primera columna.*/
+        grid-row:2;
+        grid-column: 1;
+        padding-left: 3%;
+        height: 50px; 
+    }
+    /* Eliminamos los márgenes del texto de los enlaces que forman el segundo elemento.*/
+    .footer_elemento2 > p
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Colocamos el elemento 3 en la segunda columna, primera fila.*/
+    .footer_elemento3
+    {
+        grid-row: 1;
+        grid-column: 2;
+        align-self: center;
+        height: 50px;
+        margin-bottom: 0%;
+    }
+    .footer_elemento3 > ul 
+    {
+        padding-left: 75%;    
+    }
+    .footer_elemento3 > ul > li 
+    {
+        margin-right: 10%;
+    }
+
+    /* Damos formato al cuarto elemento (la pirámide).*/
+    .footer_elemento4
+    {
+        /* Colocamos el símbolo en la segunda fila y la segunda columna.*/
+        grid-row: 2;
+        grid-column: 2;
+        /* Colocamos de símbolo en la parte derecha.*/
+        justify-self: right;
+        padding-right: 8%;
+        margin-top: 5%;
+        padding-top: 0%;
+        height: 10px;
+    }
+    .footer_elemento4 p 
+    {
+        margin-top: 0%;
+        padding-top: 0%;
+        font-size: 5em;
+    }
+}
+
+/* Si el tamaño de la pantalla es inferior a 414px...*/
+@media only screen and (max-width: 414px) 
+{ 
+    /* El header...*/
+    header 
+    {
+        margin-top: 5%;
+
+        /*...estará formado por una única columna.*/
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;  
+        font-size: 0.8em;
+        margin-bottom: 10%;
+    }
+    header a
+    {
+        text-decoration: none;
+        color:rgba(28,28,28);
+        opacity: 1;
+    }
+
+    header a:hover
+    {
+        color: rgba(28, 28, 28);
+        opacity: 0.5;
+    }
+    .div_menu_1
+    {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+    .div_logo_text
+    {
+        font-size: 2em;
+        display: inline;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .div_menu_2 
+    {
+        font-family:'Open Sans', sans-serif;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+    .div_menu_3 {
+        font-family:'Open Sans', sans-serif;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    
+    }
+    .div_menu_4 
+    {
+        grid-row: 1;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+    .div_menu_4 input
+    {
+        width: 100px;
+        height: 30px;
+        background-color:rgb(155, 23, 0);
+        color: aliceblue;
+        border-style: none;
+        border-radius: 4px;
+    }
+
+    .div_menu_4 input:hover
+    {
+        color:rgb(28, 28, 28);
+    }
+    .club 
+    {
+        font-style: italic;
+        color:rgb(155, 23, 0);
+    }  
+
+    /* En este caso la sección tendrá una anchura del 100% y el tamaño de letra será menor.*/
+    .Seccion1
+    {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.70em;
+        text-align: center;
+        line-height: 17px;
+    }
+    .Seccion1 > p 
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    /* En este caso disminuiremos el tamaño de h2.*/
+    h2
+    {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    /* En formato móbil el ancho será del 100% y solo trabajaremos */
+    /* con una única columna.*/
+    .Seccion2
+    {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* En este formato disminuimos el tamaño de las imágenes.*/
+    .Seccion2_imagenes 
+    {
+        width: 40%;
+        height: 40%;  
+    }
+
+    .Seccion2_img
+    {
+        align-self: center;
+        text-align: center;
+         
+    }
+    .Seccion2_img > p
+    {
+        margin-top: 0%;
+        font-size:0.7em;
+    }
+    /* La sección tercera también estará formada por una única columna.*/
+    /* El ancho también se verá reducido a 95%.*/
+    .Seccion3 
+    {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Seccion3 > p
+    {
+        margin: 0;
+        font-size: 1em;
+        margin-left: 2.5%;
+        margin-right: 2%;
+        margin-bottom: 3%;
+    }
+
+    /* El elemento2 de la sección 3 ocupará el 100% en el caso */
+    /* del formato móbil. */
+    .Seccion3_elemento2
+    {
+        width: 100%;
+        margin:0 auto;
+    }
+    /* El boton de registro acupará aproximadamente un 100%.*/
+    .Seccion3_elemento2_input
+    {
+        margin-bottom: 2%;
+        width: 98%;
+        height: 30px;
+        color:rgb(28, 28, 28);
+        border-style: solid;
+        border-width: 1%;
+    }
+    form > p
+    {
+        text-align: left;
+        font-size: 0.5em;
+        padding-left: 0%;
+        font-family:'Open Sans', sans-serif;
+        
+    }
+    .Seccion3_checkbox
+    {
+       padding: 0;
+       margin: 0; 
+    }
+    form > label
+    {
+        font-size: 0.5em;
+        padding-right: 10%;
+    }
+    .registro
+    {
+        margin-top: 2%;
+        width:150px;
+        height: 40px;
+        background-color:rgb(155, 23, 0);
+        color: aliceblue;
+        border-style: none;
+        border-radius: 4px;
+        display:block;
+        font-size: 1em;
+        font-family:'Open Sans', sans-serif;
+    }
+    .registro:hover
+    {
+        color:rgb(28, 28, 28);
+    }
+
+    /* En este caso el footer estará formado...*/ 
+    footer
+    {
+        font-size: 0.5em;
+        width: 100%;
+        background-color: rgb(67, 58, 68);
+        height: 200px;
+        margin-top: 8%;
+
+        text-align: center;
+        /*...por una única columna.*/
+        display: grid;
+        grid-template-columns: 1fr;
+        color:rgb(255, 255, 255) ;
+        font-family:'Open Sans', sans-serif;
+    }
+
+    /* El elemento 1 del footer lo situamos en la primera fila del grid.*/
+    .footer_elemento1
+    {
+        margin-top: 7%;
+        grid-row: 1;
+    }
+
+    .footer_elemento1 > ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+     /* El elemento 2 del footer lo situamos en la segunda fila del grid.*/
+    .footer_elemento2
+    {
+        margin-top: 3%;
+        grid-row: 2;  
+    }
+    .footer_elemento2 > p
+    {
+        margin: 0;
+        padding: 0;
+    }
+     /* El elemento 3 del footer lo situamos en la tercera fila del grid.*/
+    .footer_elemento3
+    {
+        margin-top: 3%;
+        grid-row: 3;
+        
+    }
+    .footer_elemento3 > ul 
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    /* El elemento 4 del footer lo situamos en la cuarta fila del grid.*/
+    .footer_elemento4
+    {
+        justify-self: right;
+        padding-right: 5%;
+        grid-row: 4;
+    }
+
+    .footer_elemento4  p
+    {
+        font-size: 1em;
+    }   
+}
+
+/* Formateamos los colores y comportamiento de los links de la seccion 3_elemento2 */
+/* y del footer. */
+.Seccion3_elemento2 a
+{
+    color:rgb(155, 23, 0);
+    text-decoration: none;
+}
+.Seccion3_elemento2 a:hover
+{
+    opacity:0.5;
+}
+footer a
+{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+}
+footer a:hover
+{
+        color:rgb(155, 23, 0);
+        text-decoration: none;
+}
+
+/******** Clubes temáticos ***********/
+
+/* Si el tamaño de la pantalla es mayor que 768px...*/
+@media only screen and (min-width: 768px) 
+{ 
+    /* La Sección principal será un grid formado por */
+    /* tres columnas y con un ancho del 70%.*/
+    .Seccion1_clubes
+    {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:0 auto;  
+    }
+
+}
+
+/* Si  el tamaño de la pantalla es inferior a 414px...*/
+@media only screen and (max-width: 414px) 
+{
+    /* La Sección principal será un grid formado por */
+    /* una columna y con un ancho del 100%.*/
+    .Seccion1_clubes
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin:0 auto;
+        text-align: center;
+    }
+}
+
+/*El texto de cada club...*/
+.Seccion1_clubes_texto
+{
+    /* Tendrá una anchura del 95% de la columna.*/
+    width: 95%;
+    /* Centramos el div contenedor y alineamos el texto.*/
+    margin:0 auto;
+    text-align: left;
+}
+.Seccion1_cubes_texto > p 
+{
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+/* Damos tamaño a las imágenes de los clubes.*/
+.Seccion1_clubes_imagenes
+{
+    width: 95%;
+    height: auto;
+}
+
+/* Formateamos los puntos de decoración del título del texto.*/
+.Seccion1_clubes code
+{
+    color:rgb(155, 23, 0);
+    margin-right: 1%;
+}
+
+/* Formateamos el link en 2020 veremos.*/
+.Seccion1_clubes_texto a
+{
+    color:rgb(155, 23, 0);
+    text-decoration: none;
+}
+
+/******** SESIONES 2020 ***********/
+/*Si la pantalla tiene un tamaño mayor que 768px...*/
+@media only screen and (min-width: 768px) 
+{
+    /* La primera sección ocupará la mitad del ancho de la página */
+    /* y estará centrada.*/
+    .Seccion1_Sesiones_2020
+    {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 3%;
+    }
+
+    .Seccion1_Sesiones_2020 > p
+    {   
+        /* Aumentamos el espacio entre líneas.*/
+        line-height: 170%;
+    }   
+    /* La seccion 2 estará compuesta...*/
+    .Seccion2_Sesiones_2020
+    {
+        /*...Un grid con dos columnas una de las cuales ocupa */
+        /*la tercera parte del alcho del grid.*/
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /*grid-template-rows: 50%;*/
+        border-top: 4px dotted rgb(155, 23, 0);
+        padding-top: 2%;
+
+        /* El tamaño de dicha sección ocupará un 65%.*/
+        width: 65%;
+        /*Centramos el contenedor y damos altura automática.*/
+        margin: 0 auto;
+        height: auto; 
+    }
+
+    /*.Seccion2_Sesiones_2020 p 
+    {
+        grid-column: 2; 
+    }*/
+
+    /* La sección derecha estará situada en la segunda columna. */
+    .seccion_derecha
+    {
+        grid-column: 2;
+    }
+
+    /* El contenedor de la seccion derecha está compuesto por...*/
+    .Seccion2_Sesiones_2020_derecha
+    {
+        /* Un grid de tres columnas.*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Centramos.*/
+        margin: 0 auto;
+        /* Damos un margen de 2% entre columnas y filas.*/
+        column-gap: 2%;
+        row-gap: 2%;
+
+        height: auto;
+        margin-bottom: 7%;
+    }
+    /* Damos formato al menú de la izquierda.*/
+    .Seccion2_Sesiones_2020_izquierda ul li {
+
+        margin-bottom: 3%;
+        font-size: 0.75em;
+    }
+    .seccion_derecha p, #galardonados #espacio #intriga #epoca #romanticos #nacional
+    {
+        margin-left: -2%;
+    }
+}
+    /* Formateamos la descripción de la película.*/
+    figcaption
+    {
+        padding-top: 0%;
+        background-color: white;
+        margin-top: 0%;
+        text-align: left;
+        color:rgb(155, 23, 0);
+        padding-left: 2%; 
+    }
+    /*Formateamos el contenedor de la imagen.*/
+    figure
+    {
+        margin: 0;
+        padding:0;
+        /* Creamos la sombra del contenedor.*/
+        box-shadow: 4px 4px 4px;
+        background-color: white;
+    }
+
+    /*.Seccion2_Sesiones_2020_derecha p
+    {
+        vertical-align: bottom;
+        background-color: white;
+        color:rgb(155, 23, 0);
+        text-align: left;
+        margin: 0;
+    }*/
+
+    /* Damos formato a las imágenes.*/
+    .Seccion2_Sesiones_imagenes
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .Seccion_Sesiones_2020_izquierda
+    {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Damos formato al menú de las sesiones.*/
+    .Seccion2_Sesiones_2020_izquierda ul
+    {
+        list-style: none;
+        padding-left: 0%;
+    }
+    /* Fomateamos los links del menú de sesiones.*/
+    .Seccion2_Sesiones_2020_izquierda a
+    {
+        text-decoration: none;
+        color: black; 
+    }
+    /*Cuando acercamos el mouse bajamos la opacidad.*/
+    .Seccion2_Sesiones_2020_izquierda a:hover
+    {
+        text-decoration: none;
+        color: black; 
+        opacity: 0.5;
+    }
+    /* Damos formato a los símbolos de decoración: color de fuente */
+    /* y margen con el texto contiguo.*/
+    .seccion_derecha code
+    {
+        color:rgb(155, 23, 0);
+        margin-right: 1%;
+    }
+
+    /* Aumentamos el margen izquierdo del menú situado en la sección izquierda.*/
+    .seccion_derecha p, #galardonados #espacio #intriga #epoca #romanticos #nacional
+    {
+        margin-left: -2%;
+    }
+
+    /* Definimos los links de acceso al detalle de las películas */
+    /* y su comportamiento ante el mouse over.*/
+    figcaption a
+    {
+        color:rgb(155, 23, 0);
+        text-decoration: none;
+    }
+    figcaption a:hover
+    {
+        opacity:0.5;
+    }
+
+/* Si la demension de la pantalla es de menor tamaño que 414px...*/
+@media only screen and (max-width: 414px) 
+{
+    /*...el tamaño de la sección aumentará.*/
+    .Seccion1_Sesiones_2020
+    {
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 3%;
+        font-size: 0.75em;
+        margin-bottom: 4%;
+    }
+    .Seccion2_Sesiones_2020_izquierda ul li {
+
+        margin-bottom: 0%;
+        font-size: 0.65em;
+    }
+
+    /*...la sección 2 no será ningún grid. Que es similar */
+    /* a tener un grid con una sola columna.*/
+    .Seccion2_Sesiones_2020
+    {
+        padding-top: 2%;
+        width: 95%;
+        margin: 0 auto;
+        height: auto; 
+    }
+
+    /* la representación de las películas ocupará un 60% del ancho */
+    /* y en vez de tener tres columnas tendremos un grid con una sola columna.*/
+    .Seccion2_Sesiones_2020_derecha
+    {
+        width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2%;
+        height: auto;
+        margin-bottom: 40%;
+    }
+
+    /* Cambiamos márgenes y tamaño de letra del menú de sesiones.*/
+    .seccion_derecha p, #galardonados #espacio #intriga #epoca #romanticos #nacional
+    {
+        margin-left: 0%;
+        font-size: 0.75em;
+    }
+}
+
+/******* DETALLE SESIÓN *********/
+@media only screen and (min-width: 768px) 
+{
+    /* Formatemos el Hilo de Ariadna.*/
+    ul.breadcrumb 
+    {
+        margin-left: 8%;
+        list-style: none;
+    }
+
+    /* Damos formato al contenedor principal. */
+    .Detalle_main
+    {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+        font-size: 0.75em;
+    }
+    /* La sección 1 está compuesta por... */
+    .Detalle_Seccion1
+    {
+        /*...un grid de dos columnas con una separación */
+        /* del 7% entre ellas .*/
+        display: grid;
+        column-gap: 7%;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin:0 auto;
+        height: auto;
+    }
+    /* Colocamos el h1 al mismo nivel que la sección1.*/
+    .Detalle_main h1
+    {
+        padding-left: 10%;
+    }
+    /* Damos tamaño al vídeo.*/
+    iframe 
+    {
+        width: 400px;
+        height: 250px;
+    }
+}
+/* Si el tamaño de la pantalla es inferiora 414px..*/
+@media only screen and (max-width: 414px) 
+{
+    /* Centramos el hilo de Ariadna.*/
+    ul.breadcrumb 
+    {
+        list-style: none;
+        text-align: center;
+
+    }
+    /*...aumentamos el tamaño del contenedor principal */
+    /* y disminuimos el tamaño de la letra.*/
+    .Detalle_main
+    {
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+        font-size: 0.75em;
+    }
+    /* ...la Seccion 1 dejará de ser un grid ya que los elemntos */
+    /* irán dispuestos de forma vertical y secuencialmente.*/
+    .Detalle_Seccion1
+    {
+        width: 95%;
+        margin:0 auto;
+        height: auto;
+    }
+    /*...eliminamos el padding del título de la película*/
+    .Detalle_main h1
+    {
+        padding-left: 0%;
+    }
+    /*...modificamos el tamaño de la película.*/
+    iframe 
+    {
+        width: 100%;
+        height:230px;
+    }
+}
+/* La seccion izquierda la colocamos en la primera columna.*/
+.Detalle_Seccion1_izquierda
+{
+    grid-column: 1;
+}
+/* La sección derecha la colocamos en la segunda columna.*/
+.Detalle_Seccion1_derecha
+{
+    grid-column: 2;
+    text-align: justify;
+}
+/* Damos formato a la imagen del director de la película.*/
+.Detalle_Seccion1_derecha img
+{
+    /* con un radio de 150px conseguimos una imagen redonda.*/
+    border-radius: 150px;
+    margin-right: 1%;
+    float: left;
+}
+
+.Detalle_Seccion1_derecha p
+{
+    padding-top: 0px;
+}
+
+.Detalle_Seccion1_derecha h3
+{
+    margin-top: 0px;
+}
+ul
+{
+    list-style: none;
+}
+.lista_master ul
+{
+    font-size: bold;
+}
+.lista_master > li
+{
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+/* Los elementos estarán en la misma línea.*/
+ul.breadcrumb li 
+{
+    display: inline;
+}
+/* Fomateamos la lista.*/
+ul.breadcrumb 
+{
+    padding: 10px 16px;
+    list-style: none;
+}
+  
+/* Definimos el símbolo que separa los elementos que definen la ruta.*/
+ul.breadcrumb li+li:before 
+{
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+/* Damos color a los elemntos de la ruta. */
+ul.breadcrumb li a 
+{
+    color: black;
+    text-decoration: none;
+}
+  
+/* Añadimos efecto en el mouse over.*/
+ul.breadcrumb li a:hover 
+{
+    color: black;
+    text-decoration: underline;
+}
+/* Bajamos la opacidad en el último elemento.*/
+ul.breadcrumb li:nth-child(3)
+{
+    opacity: 0.5;
+}
